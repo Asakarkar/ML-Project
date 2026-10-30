@@ -1,0 +1,22 @@
+{
+  "selected_model": "Kernelized SVC with PCA",
+  "train_accuracy": 83.93,
+  "test_accuracy": 80.22,
+  "train_accuracy_fraction": 0.839335,
+  "test_accuracy_fraction": 0.802198,
+  "test_precision": 74.80,
+  "test_recall": 80.22,
+  "test_f1": 75.95,
+  "linear_svc_with_pca_accuracy": 80.22,
+  "linear_svc_with_pca_fraction": 0.802198,
+  "pca_components": 122,
+  "pca_explained_variance": 0.9807,
+  "raw_features": 279,
+  "features_after_drop": 278,
+  "dropped_columns": [13],
+  "height_corrections": {"608": 108, "780": 180},
+  "training_samples": 361,
+  "testing_samples": 91,
+  "random_state": 1,
+  "test_size": 0.20
+}

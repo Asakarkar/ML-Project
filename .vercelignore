@@ -1,0 +1,17 @@
+# Vercel Ignore File
+.git
+.github
+__pycache__
+*.pyc
+venv/
+env/
+.venv/
+node_modules/
+Data/
+Model/
+Preprocessing and EDA/
+final with pca.ipynb
+train_model.py
+ecg_pipeline.py
+.gemini/
+

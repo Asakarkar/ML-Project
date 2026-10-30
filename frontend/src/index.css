@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+:root {
+  --bg-cream: #faf7f2;
+  --bg-subtle: #f5f1ea;
+  --bg-white: #ffffff;
+  --border-cream: #e6e0d4;
+  --border-muted: #dcd6c8;
+  --text-main: #1c1917;
+  --text-muted: #615c54;
+  --text-light: #8f887c;
+  --ecg-color: #8c3b2d; /* Terracotta / ECG clinical trace */
+  --grid-color: rgba(210, 198, 180, 0.35); /* Subtle sepia grid */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-cream);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings specified as Courier New */
+h1, h2, h3, h4, h5, h6, .heading-font {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* Authentic ECG Graph Paper Background (Medical Millimeter Grid) */
+.ecg-grid-paper {
+  background-color: #faf6f0;
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(rgba(210, 198, 180, 0.7) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(210, 198, 180, 0.7) 1px, transparent 1px);
+  background-size: 8px 8px, 8px 8px, 40px 40px, 40px 40px;
+}
+
+/* Sophisticated Ambient Medical SaaS Background Animation */
+.product-bg-ambient {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-bg-ambient::before {
+  content: "";
+  position: fixed;
+  top: -15%;
+  left: -10%;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(140, 59, 45, 0.045) 0%, rgba(250, 247, 242, 0) 70%);
+  animation: floatAmbient1 24s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.product-bg-ambient::after {
+  content: "";
+  position: fixed;
+  bottom: -20%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(194, 120, 48, 0.035) 0%, rgba(250, 247, 242, 0) 70%);
+  animation: floatAmbient2 28s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes floatAmbient1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(60px, 40px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-40px, 80px) scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+@keyframes floatAmbient2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-70px, -50px) scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50px, -30px) scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+/* Background Animated ECG Wave Silhouette */
+@keyframes driftWave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-drift-wave {
+  animation: driftWave 32s linear infinite;
+}
+
+/* Subtle Glowing Medical Status Dot */
+@keyframes beaconPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.beacon-pulse-emerald {
+  animation: beaconPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth Scientific Page Transitions */
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clinical Telemetry Pulse */
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  14% {
+    transform: scale(1.18);
+    opacity: 0.9;
+  }
+  28% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  42% {
+    transform: scale(1.12);
+    opacity: 0.95;
+  }
+  70% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-heart-pulse {
+  animation: heartPulse 1.25s infinite ease-in-out;
+}
+
+/* Continuous Oscilloscope / ECG Sweep Animation */
+@keyframes ecgSweep {
+  0% {
+    stroke-dashoffset: 1200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-ecg-trace {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: ecgSweep 4s linear infinite;
+}
+
+/* Telemetry Sweep Light Dot */
+@keyframes scanlineSweep {
+  0% {
+    left: 0%;
+    opacity: 0.8;
+  }
+  95% {
+    left: 100%;
+    opacity: 0.8;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.animate-scanline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(140, 59, 45, 0.05), rgba(140, 59, 45, 0.9), rgba(140, 59, 45, 0.05));
+  box-shadow: 0 0 8px rgba(140, 59, 45, 0.6);
+  animation: scanlineSweep 4s linear infinite;
+  pointer-events: none;
+}
+
+/* Subtly animated data bar */
+@keyframes barGrow {
+  from {
+    width: 0%;
+  }
+}
+
+.animate-bar-grow {
+  animation: barGrow 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Clean clinical table and form styling */
+input[type="number"],
+input[type="text"],
+select,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #dfd9cc;
+  color: #1c1917;
+  transition: border-color 0.15s ease-in-out;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #78716c;
+}
+
+/* Custom scrollbars for clean dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f1ea;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d1c2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bab2a1;
+}

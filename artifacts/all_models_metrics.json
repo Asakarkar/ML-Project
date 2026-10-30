@@ -1,0 +1,122 @@
+{
+  "KNN Classifier": {
+    "train_accuracy": 64.82,
+    "test_accuracy": 64.84,
+    "train_accuracy_fraction": 0.648199,
+    "test_accuracy_fraction": 0.648352,
+    "accuracy": 64.84,
+    "precision": 58.62,
+    "recall": 64.84,
+    "f1_score": 54.41
+  },
+  "Logistic Regression": {
+    "train_accuracy": 93.91,
+    "test_accuracy": 78.02,
+    "train_accuracy_fraction": 0.939058,
+    "test_accuracy_fraction": 0.780220,
+    "accuracy": 78.02,
+    "precision": 74.20,
+    "recall": 78.02,
+    "f1_score": 75.12
+  },
+  "Decision Tree Classifier": {
+    "train_accuracy": 78.95,
+    "test_accuracy": 68.13,
+    "train_accuracy_fraction": 0.789474,
+    "test_accuracy_fraction": 0.681319,
+    "accuracy": 68.13,
+    "precision": 65.40,
+    "recall": 68.13,
+    "f1_score": 64.80
+  },
+  "Linear SVC": {
+    "train_accuracy": 88.09,
+    "test_accuracy": 78.02,
+    "train_accuracy_fraction": 0.880886,
+    "test_accuracy_fraction": 0.780220,
+    "accuracy": 78.02,
+    "precision": 74.15,
+    "recall": 78.02,
+    "f1_score": 74.88
+  },
+  "Kernelized SVC": {
+    "train_accuracy": 85.04,
+    "test_accuracy": 79.12,
+    "train_accuracy_fraction": 0.850416,
+    "test_accuracy_fraction": 0.791209,
+    "accuracy": 79.12,
+    "precision": 71.30,
+    "recall": 79.12,
+    "f1_score": 72.45
+  },
+  "Random Forest Classifier": {
+    "train_accuracy": 88.09,
+    "test_accuracy": 75.82,
+    "train_accuracy_fraction": 0.880886,
+    "test_accuracy_fraction": 0.758242,
+    "accuracy": 75.82,
+    "precision": 70.10,
+    "recall": 75.82,
+    "f1_score": 71.90
+  },
+  "KNN Classifier with PCA": {
+    "train_accuracy": 64.54,
+    "test_accuracy": 64.84,
+    "train_accuracy_fraction": 0.645429,
+    "test_accuracy_fraction": 0.648352,
+    "accuracy": 64.84,
+    "precision": 58.62,
+    "recall": 64.84,
+    "f1_score": 54.41
+  },
+  "Logistic Regression with PCA": {
+    "train_accuracy": 78.39,
+    "test_accuracy": 79.12,
+    "train_accuracy_fraction": 0.783934,
+    "test_accuracy_fraction": 0.791209,
+    "accuracy": 79.12,
+    "precision": 73.10,
+    "recall": 79.12,
+    "f1_score": 74.50
+  },
+  "Linear SVC with PCA": {
+    "train_accuracy": 80.89,
+    "test_accuracy": 80.22,
+    "train_accuracy_fraction": 0.808864,
+    "test_accuracy_fraction": 0.802198,
+    "accuracy": 80.22,
+    "precision": 75.20,
+    "recall": 80.22,
+    "f1_score": 76.10
+  },
+  "Kernelized SVC with PCA": {
+    "train_accuracy": 83.93,
+    "test_accuracy": 80.22,
+    "train_accuracy_fraction": 0.839335,
+    "test_accuracy_fraction": 0.802198,
+    "accuracy": 80.22,
+    "precision": 74.80,
+    "recall": 80.22,
+    "f1_score": 75.95
+  },
+  "Decision Tree Classifier with PCA": {
+    "train_accuracy": 75.35,
+    "test_accuracy": 60.44,
+    "train_accuracy_fraction": 0.753463,
+    "test_accuracy_fraction": 0.604396,
+    "accuracy": 60.44,
+    "precision": 57.57,
+    "recall": 60.44,
+    "f1_score": 54.99
+  },
+  "Random Forest Classifier with PCA": {
+    "train_accuracy": 73.13,
+    "test_accuracy": 61.54,
+    "train_accuracy_fraction": 0.731302,
+    "test_accuracy_fraction": 0.615385,
+    "accuracy": 61.54,
+    "precision": 48.20,
+    "recall": 61.54,
+    "f1_score": 49.80
+  }
+}
